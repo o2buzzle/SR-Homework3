@@ -1,0 +1,6 @@
+Pillow==9.1.1
+PyAutoGUI==0.9.53
+python-weather==0.3.7
+requests==2.27.1
+speech-recognition @ git+https://github.com/Uberi/speech_recognition.git@73ae57cfc785fc1e01737a53dc70ba2d1491c0c9
+yt-dlp==2022.5.18
