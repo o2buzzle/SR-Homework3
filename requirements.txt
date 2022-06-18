@@ -6,3 +6,5 @@ speech-recognition @ git+https://github.com/Uberi/speech_recognition.git@73ae57c
 yt-dlp==2022.5.18
 playsound==1.2.2
 gtts==2.2.4
+SpeechRecognition==3.8.1
+PyAudio==0.2.11

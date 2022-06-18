@@ -8,3 +8,11 @@ def speak(text):
     tts.save("sound.mp3")
     playsound.playsound("sound.mp3", False)
     os.remove("sound.mp3")
+
+def speak_weather(curr_weather, location):
+    content = "Right now it\'s {} and {} Celcius in {}. " \
+              "The wind speed is {} km/h. " \
+              "The humidity is {}%.".format(curr_weather.sky_text, curr_weather.temperature, location,
+                                            curr_weather.wind_speed, curr_weather.humidity)
+    speak(content)
+    return 0
