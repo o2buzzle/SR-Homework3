@@ -165,3 +165,5 @@ share/
 
 # runtime files
 screenshot*
+*.xml
+.idea/SR-Homework3.iml
