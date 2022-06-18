@@ -4,6 +4,7 @@ import yt_dlp
 
 YTDL_OPTS = {
     "default_search": "ytsearch",
+    "quiet": True,
 }
 
 YOUTUBE_DL = yt_dlp.YoutubeDL(params=YTDL_OPTS)

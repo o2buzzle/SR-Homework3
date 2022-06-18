@@ -2,10 +2,11 @@ from text_to_speech import tts
 import speech_recognition as sr
 import time
 
+
 def get_audio():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("You: ", end='')
+        print("You: ", end="")
         audio = r.listen(source, phrase_time_limit=5)
         try:
             text = r.recognize_google(audio, language="en-US")
@@ -14,6 +15,7 @@ def get_audio():
         except:
             print("...")
             return 0
+
 
 def get_text():
     print("Please speak something")
