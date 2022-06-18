@@ -1,0 +1,1 @@
+File <code>gui.py</code> is generated from file <code>gui.gui</code> using <code>pyuic5 gui.ui -o gui.py</code>      
