@@ -35,13 +35,16 @@ def preprocess(text):
     if intent == "media":
         command = "play"
     if (intent is not None and intent!="system"):
-        while (text[0]==" "):
+        while (text!="" and text[0]==" "):
             text= text[1:]
     if intent == "system":
         text = ""
+    if intent == "info":
+        if text is None or text=="":
+            text = "hanoi"
     if intent == None or (intent=="browser" and command ==None):
         intent = "browser"
         command = "google"
     return f'{intent} {command} {text}'
 if __name__ == '__main__':
-    print(preprocess("what is a lamp"))
+    print(preprocess("show weather"))
