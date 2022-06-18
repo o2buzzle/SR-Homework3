@@ -11,12 +11,16 @@ def _shutdown_system() -> None:
     elif os.name == "posix":
         os.system("shutdown -h now")
 
+    return "Shutting down system"
+
 
 def _reboot_system() -> None:
     if os.name == "nt":
         os.system("shutdown -r -t 0")
     elif os.name == "posix":
         os.system("shutdown -r now")
+
+    return "Rebooting system"
 
 
 # def _battery_status():
@@ -39,15 +43,17 @@ def _screenshot():
         elif platform.system() == "Linux":
             os.system("xdg-open screenshot.png")
 
+    return "Screenshot taken"
+
 
 def interp(q: str):
     # check if the query is a system command
     if q.startswith("shutdown"):
-        _shutdown_system()
+        return _shutdown_system()
     elif q.startswith("reboot"):
-        _reboot_system()
+        return _reboot_system()
     elif q.startswith("screenshot"):
-        _screenshot()
+        return _screenshot()
     #    elif q.startswith("battery"):
     #        return _battery_status()
     else:

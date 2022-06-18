@@ -22,12 +22,13 @@ def _play_youtube(q: str) -> None:
     """
     url = _search_youtube(q)
     webbrowser.open(url)
+    return "Opening webpage"
 
 
 def interp(q: str) -> None:
     if q.startswith("play"):
-        _play_youtube(q[5:])
+        return _play_youtube(q[5:])
     elif q.startswith("search"):
-        _play_youtube(q[7:])
+        return _play_youtube(q[7:])
     else:
         raise Exception("Unknown command")

@@ -3,6 +3,7 @@ import webbrowser
 
 def _launch_webpage(url):
     webbrowser.open(url)
+    return "Launching webpage"
 
 
 def _google_search(query):
@@ -19,10 +20,10 @@ def _bing_search(query):
 
 def interp(q):
     if q.startswith("google"):
-        _launch_webpage(_google_search(q[7:]))
+        return _launch_webpage(_google_search(q[7:]))
     elif q.startswith("youtube"):
-        _launch_webpage(_youtube_search(q[8:]))
+        return _launch_webpage(_youtube_search(q[8:]))
     elif q.startswith("youtube"):
-        _launch_webpage(_youtube_search(q[8:]))
+        return _launch_webpage(_youtube_search(q[8:]))
     else:
         raise Exception("Unknown command")
