@@ -34,18 +34,13 @@ def _define_word(word: str):
 
 def interp(q):
     if q.startswith("time"):
-        time = _get_time()
-        tts.speak("It's {}".format(time))
         return _get_time()
     elif q.startswith("date"):
-        date = _get_date()
-        tts.speak("Today is {}".format(date))
         return _get_date()
     elif q.startswith("weather"):
         location = q[8:]
         curr_weather = _get_weather(location)
-        tts.speak_weather(curr_weather, location)
-        return f"{curr_weather.temperature}°C, {curr_weather.sky_text}, {curr_weather.wind_speed}km/h, Humidity: {curr_weather.humidity}%"
+        return location, curr_weather
     elif q.startswith("define"):
         word = q[7:]
         definition = _define_word(word)

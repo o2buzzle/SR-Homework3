@@ -4,10 +4,6 @@ from speech_to_text import stt
 
 def interpreter(command: str):
     intent, command = command.split(" ", 1)
-    if intent == "speak":
-        command = stt.get_text()
-        intent, command = command.split(" ", 1)
-
     if intent == "system":
         return system_interface.interp(command)
     elif intent == "browser":
@@ -15,5 +11,26 @@ def interpreter(command: str):
     elif intent == "media":
         return media_interface.interp(command)
     elif intent == "info":
-        return info_interface.interp(command)
+        if("time" in command):
+            time = info_interface.interp(command)
+            content = "It's {}".format(time)
+            return content
+            return
+        elif("date" in command):
+            date = info_interface.interp(command)
+            content = "Today is {}".format(date)
+            return content
+        elif("weather" in command):
+            location, curr_weather = info_interface.interp(command)
+            content = (
+                "Right now it's {} and {} Celcius in {}. "
+                "The wind speed is {} km/h. "
+                "The humidity is {}%.".format(
+                    curr_weather.sky_text,
+                    curr_weather.temperature,
+                    location,
+                    curr_weather.wind_speed,
+                    curr_weather.humidity,
+                )
+            return content
 
