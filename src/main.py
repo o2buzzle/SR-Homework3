@@ -18,6 +18,7 @@ class MainThread(QThread):
         while True:
             with m as source:
                 r.adjust_for_ambient_noise(source)
+                print("Listening...")
                 audio = r.listen(m)
                 perform_callback(r, audio)
                 time.sleep(1)

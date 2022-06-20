@@ -2,7 +2,7 @@ keyword = {
     "help":["help"],
     "media":["play me", "play","song", "music", "video" ],
     "browser":["search","google", "bing", "youtube","define"],
-    "info":["show", "show me"],
+    "info":["show", "show me", "information", "info"],
     "system":["shutdown","shut the computer down", "screenshot"]
 }
 command_key = {
@@ -45,6 +45,7 @@ def preprocess(text):
     if intent == None or (intent=="browser" and command ==None):
         intent = "browser"
         command = "google"
+    
     return f'{intent} {command} {text}'
 if __name__ == '__main__':
     print(preprocess("show weather"))

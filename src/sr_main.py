@@ -39,6 +39,7 @@ def perform_callback(r, audio):
     try:
         text = r.recognize_google(audio, language="en-US")
         prep_text = preprocess.preprocess(text[0])
+        print(prep_text)
         result = core_interactions.interpreter(prep_text)
         print(result)
         tts.speak(result)
