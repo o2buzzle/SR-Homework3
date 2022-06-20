@@ -13,7 +13,7 @@ class MainThread(QThread):
         self.TaskExecution()
 
     def TaskExecution(self):
-        startup()
+        # startup()
         wish()
         while True:
             with m as source:

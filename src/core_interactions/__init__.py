@@ -15,7 +15,6 @@ def interpreter(command: str):
             time = info_interface.interp(command)
             content = "It's {}".format(time)
             return content
-            return
         elif("date" in command):
             date = info_interface.interp(command)
             content = "Today is {}".format(date)
@@ -32,5 +31,6 @@ def interpreter(command: str):
                     curr_weather.wind_speed,
                     curr_weather.humidity,
                 )
+            )
             return content
 
