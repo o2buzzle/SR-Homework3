@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, 0, 1440, 900))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("GUI/images/live_wallpaper.gif"))
+        self.label.setPixmap(QtGui.QPixmap("Jarvis/utils/images/live_wallpaper.gif"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
@@ -36,25 +36,25 @@ class Ui_MainWindow(object):
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(10, 10, 401, 91))
         self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap("GUI/images/initiating.gif"))
+        self.label_2.setPixmap(QtGui.QPixmap("Jarvis/utils/images/initiating.gif"))
         self.label_2.setObjectName("label_2")
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser.setGeometry(QtCore.QRect(640, 30, 291, 61))
         self.textBrowser.setStyleSheet("font: 75 16pt \"MS Shell Dlg 2\";\n"
-"background-color:transparent;\n"
+"background-color:transparent;color:white;\n"
 "border-radius:none;\n"
 "")
         self.textBrowser.setObjectName("textBrowser")
         self.textBrowser_2 = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser_2.setGeometry(QtCore.QRect(930, 30, 291, 61))
         self.textBrowser_2.setStyleSheet("font: 75 16pt \"MS Shell Dlg 2\";\n"
-"background-color:transparent;\n"
+"background-color:transparent;color:white;\n"
 "border-radius:none;")
         self.textBrowser_2.setObjectName("textBrowser_2")
         self.textBrowser_3 = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser_3.setGeometry(QtCore.QRect(1000, 500, 431, 281))
         self.textBrowser_3.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";\n"
-"background-color:transparent;")
+"background-color:transparent;color:white;")
         self.textBrowser_3.setObjectName("textBrowser_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)

@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GUI/images/live_wallpaper.gif</pixmap>
+     <pixmap>Jarvis/utils/images/live_wallpaper.gif</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -80,7 +80,7 @@ font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>GUI/images/initiating.gif</pixmap>
+     <pixmap>Jarvis/utils/images/initiating.gif</pixmap>
     </property>
    </widget>
    <widget class="QTextBrowser" name="textBrowser">
@@ -94,7 +94,7 @@ font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;
-background-color:transparent;
+background-color:transparent;color:white;
 border-radius:none;
 </string>
     </property>
@@ -110,7 +110,7 @@ border-radius:none;
     </property>
     <property name="styleSheet">
      <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;
-background-color:transparent;
+background-color:transparent;color:white;
 border-radius:none;</string>
     </property>
    </widget>
@@ -125,7 +125,7 @@ border-radius:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 11pt &quot;MS Shell Dlg 2&quot;;
-background-color:transparent;</string>
+background-color:transparent;color:white;</string>
     </property>
    </widget>
   </widget>
