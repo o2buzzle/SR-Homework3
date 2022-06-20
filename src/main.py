@@ -27,7 +27,7 @@ class Main(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.startTask()
+        self.ui.pushButton.clicked.connect(self.startTask)
         self.ui.pushButton_2.clicked.connect(self.close)
 
     def __del__(self):
