@@ -16,4 +16,3 @@ def interpreter(command: str):
         return media_interface.interp(command)
     elif intent == "info":
         return info_interface.interp(command)
-

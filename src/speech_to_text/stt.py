@@ -6,14 +6,14 @@ import time
 def get_audio():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("You: ", end="")
+        # print("You: ", end="")
         audio = r.listen(source, phrase_time_limit=5)
         try:
             text = r.recognize_google(audio, language="en-US")
-            print(text)
+            # print(text)
             return text
         except:
-            print("...")
+            # print("...")
             return 0
 
 
