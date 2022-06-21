@@ -1,40 +1,32 @@
-# JARVIS (Just a Rather Very Intelligent System)
+# JARVIS (Sản phẩm về trợ lý giọng nói)
 
-## Built with
+## Đóng góp của thành viên nhóm (may not be correct :|)
 
-<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+Lê Trường Giang: Làm phần xử lý lệnh hậu preprocess, liên kết các chức năng của app với GUI
+Nguyễn Đức Huy: Làm mô hình speech to text, text to speech
+Bùi Khánh Huyền: Pre process dữ liệu, làm slide, làm GUI
+Cao Đình Hoàng Minh: Làm readme, quay video demo, tester
+
+## Mô tả chung
+
+Ứng dụng trợ lý ảo Jarvis có thể giúp người dùng thực hiện việc tra cứu thông tin, hoặc làm một số thao tác cơ bản trên máy tính. Chỉ bằng một lời nói, ứng dụng sẽ chuyển đổi giọng nói của người dùng thành văn bản, thông qua việc tiền xử lý dữ liệu (để phân loại yêu cầu từ người dùng: tra google, xem youtube hay tra cứu từ điển,...) và xử lý dữ liệu (dùng google API để lấy thông tin cần thiết do người dùng yêu cầu)
 
 
-## Features
+## Chức năng của app
 
-#### For a cool demo of this project watch this [YouTube video](https://www.youtube.com)
+Ứng dụng có những chức năng sau:
 
-It can do a lot of cool things, some of them being:
+- Chào hỏi
+- Tìm kiếm bất cứ điều gì trên Google 
+- Chơi nhạc, phát video trên YouTube
+- Cung cấp thông tin về ngày, giờ
+- Cung cấp thông tin thời tiết tại bất cứ thành phố nào trên thế giới
+- Tra cứu ý nghĩa của một cụm từ nào đó
+- Chụp ảnh màn hình và lưu ảnh tại folder của project
+- Tắt máy, khởi động lại máy
 
-- Greet user
-- Can search anything on Google 
-- Can play any song/video on YouTube
-- Tell current time and date
-- Tells about weather of any city
-- Look up for a word through a dictionary
-- Shutdown or reboot this device
-- Can take screenshot and save it
-- Has a cool Graphical User Interface
-
-  
-## Installation
-
-- First clone the repo
-- Make a new python environment
-    If you are using anaconda just type ```conda create -n jarvis python==3.8.5``` in anaconda prompt
-- To activate the environment ```conda activate jarvis```
-- Navigate to the directory of your project
-- Install all the requirements by just hitting ```pip install -r requirements.txt```
-- Install PyAudio from wheel file by following instructions given [here](https://stackoverflow.com/a/55630212)
-- Run the program by ```python src/sr_main.py```
-- Enjoy !!!!
-
-## Code Structure
+ 
+## Cấu trúc code
 
     ├── src                              # main folder for source codes 
     │   ├── core_interaction             # Contains all secret API Keys
@@ -50,3 +42,32 @@ It can do a lot of cool things, some of them being:
     │   ├── preprocess.py                # format an input sentence to make it more explicit for the model
     │   └── sr_main.py                   # main driver program of Jarvis
     └── requirements.txt                 # all dependencies of the program
+    
+## Cách thức hoạt động
+
+- Đầu tiên khi chạy app, một giao diện sẽ hiện ra, hệ thống sẵn sàng để nhận input (tiếng nói của người dùng)
+- Trong trường hợp hệ thống đã nhận diện được giọng nói và chuyển giọng nói thành câu lệnh bằng văn bản
+- Văn bản đó sẽ được tiền xử lý để phân loại câu lệnh đó thành 1 trong 4 loại: 
+  - Tra cứu bằng Google
+  - Xem trên Youtube
+  - Trích thông tin về ngày tháng, thời tiết, tra cứu từ điển
+  - Một số thao tác trên máy tính như chụp màn hình, tắt máy, khởi động lại máy
+- Với mỗi loại sẽ có một hàm/model riêng để xử lý câu lệnh và đưa ra thông tin cần thiết cho người dùng
+  - Nếu là tra cứu trên Google, Youtube thì hệ thống sẽ tự động mở trình duyệt với thông tin tương ứng
+  - Nếu là tra cứu từ điển hoặc xem thông tin về ngày tháng, thời tiết, hệ thống sẽ chuyển văn bản đầu ra thành giọng nói
+  - Nếu là thao tác trên máy tính, hệ thống sẽ được thực hiện thao tác đó luôn
+
+   
+## Cài đặt
+<!-- 
+- Make a new python environment, if you are using anaconda just type ```conda create -n jarvis python==3.8.5``` in anaconda prompt
+- To activate the environment ```conda activate jarvis``` 
+-->
+- Clone repo bằng lệnh ```git clone https://github.com/o2buzzle/SR-Homework3``` hoặc download zip & giải nén
+- Trong command line/terminal, điều hướng tới thư mục chứa dự án này
+- Cài đặt các thư viện của python bằng lệnh ```pip install -r requirements.txt```
+- Riêng PyAudio sau phiên bản python 3.6 không thể cài đặt bằng pip, có thể cài trực tiếp thông qua file wheel của PyAudio ở [đây](https://stackoverflow.com/a/55630212)
+- Chạy dự án bằng lệnh ```python src/main.py```
+- Enjoy !!!!
+
+
