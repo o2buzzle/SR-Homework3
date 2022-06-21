@@ -6,7 +6,7 @@
 
 ## Demo
 
-- Chạy ứng dụng [Jarvis](https://youtu.be/QDPgoCjAOm4)
+- Chạy ứng dụng [Jarvis](https://www.youtube.com/watch?v=6ncxw0XDeoI)
 
 ## Chức năng của app
 
@@ -53,6 +53,10 @@
   - Nếu là tra cứu từ điển hoặc xem thông tin về ngày tháng, thời tiết, hệ thống sẽ chuyển văn bản đầu ra thành giọng nói
   - Nếu là thao tác trên máy tính, hệ thống sẽ được thực hiện thao tác đó luôn
 
+## Thư viện
+
+- Mô hình nhận dạng giọng nói và chuyển giọng nói thành văn bản [speech_recognition](https://pypi.org/project/SpeechRecognition/2.1.3)
+- Mô hình chuyển từ văn bản thành giọng nói: [gTTS](https://readthedocs.org/projects/gtts/downloads/pdf/latest)
    
 ## Cài đặt
 
