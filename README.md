@@ -4,6 +4,9 @@
 
 Ứng dụng trợ lý ảo Jarvis có thể giúp người dùng thực hiện việc tra cứu thông tin, hoặc làm một số thao tác cơ bản trên máy tính. Chỉ bằng một lời nói, ứng dụng sẽ chuyển đổi giọng nói của người dùng thành văn bản, thông qua việc tiền xử lý dữ liệu (để phân loại yêu cầu từ người dùng: tra google, xem youtube hay tra cứu từ điển,...) và xử lý dữ liệu (dùng google API để lấy thông tin cần thiết do người dùng yêu cầu)
 
+## Demo
+
+- Chạy ứng dụng [Jarvis](https://youtu.be/QDPgoCjAOm4)
 
 ## Chức năng của app
 
