@@ -2,10 +2,10 @@
 
 ## Đóng góp của thành viên nhóm (may not be correct :|)
 
-Lê Trường Giang: Làm phần xử lý lệnh hậu preprocess, liên kết các chức năng của app với GUI
-Nguyễn Đức Huy: Làm mô hình speech to text, text to speech
-Bùi Khánh Huyền: Pre process dữ liệu, làm slide, làm GUI
-Cao Đình Hoàng Minh: Làm readme, quay video demo, tester
+- Lê Trường Giang: Làm phần xử lý lệnh hậu preprocess, liên kết các chức năng của app với GUI
+- Nguyễn Đức Huy: Làm mô hình speech to text, text to speech
+- Bùi Khánh Huyền: Pre process dữ liệu, làm slide, làm GUI
+- Cao Đình Hoàng Minh: Làm readme, quay video demo, tester
 
 ## Mô tả chung
 
