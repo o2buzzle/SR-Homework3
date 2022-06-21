@@ -1,12 +1,5 @@
 # JARVIS (Sản phẩm về trợ lý giọng nói)
 
-## Đóng góp của thành viên nhóm (may not be correct :|)
-
-- Lê Trường Giang: Làm phần xử lý lệnh hậu preprocess, liên kết các chức năng của app với GUI
-- Nguyễn Đức Huy: Làm mô hình speech to text, text to speech
-- Bùi Khánh Huyền: Pre process dữ liệu, làm slide, làm GUI
-- Cao Đình Hoàng Minh: Làm readme, quay video demo, tester
-
 ## Mô tả chung
 
 Ứng dụng trợ lý ảo Jarvis có thể giúp người dùng thực hiện việc tra cứu thông tin, hoặc làm một số thao tác cơ bản trên máy tính. Chỉ bằng một lời nói, ứng dụng sẽ chuyển đổi giọng nói của người dùng thành văn bản, thông qua việc tiền xử lý dữ liệu (để phân loại yêu cầu từ người dùng: tra google, xem youtube hay tra cứu từ điển,...) và xử lý dữ liệu (dùng google API để lấy thông tin cần thiết do người dùng yêu cầu)
@@ -59,15 +52,12 @@
 
    
 ## Cài đặt
-<!-- 
-- Make a new python environment, if you are using anaconda just type ```conda create -n jarvis python==3.8.5``` in anaconda prompt
-- To activate the environment ```conda activate jarvis``` 
--->
+
 - Clone repo bằng lệnh ```git clone https://github.com/o2buzzle/SR-Homework3``` hoặc download zip & giải nén
 - Trong command line/terminal, điều hướng tới thư mục chứa dự án này
 - Cài đặt các thư viện của python bằng lệnh ```pip install -r requirements.txt```
 - Riêng PyAudio sau phiên bản python 3.6 không thể cài đặt bằng pip, có thể cài trực tiếp thông qua file wheel của PyAudio ở [đây](https://stackoverflow.com/a/55630212)
-- Chạy dự án bằng lệnh ```python src/main.py```
+- Chạy dự án bằng 2 lệnh ```cd src``` và ```python main.py```
 - Enjoy !!!!
 
 
