@@ -1,4 +1,6 @@
-# JARVIS (Sản phẩm về trợ lý giọng nói)
+# JARVIS - Sản phẩm về trợ lý giọng nói
+
+![screenshot](https://user-images.githubusercontent.com/63271771/174852550-7e476672-7da9-4687-932b-7a59e7fa6413.png)
 
 ## Mô tả chung
 
@@ -12,7 +14,6 @@
 
 Ứng dụng có những chức năng sau:
 
-- Chào hỏi
 - Tìm kiếm bất cứ điều gì trên Google 
 - Chơi nhạc, phát video trên YouTube
 - Cung cấp thông tin về ngày, giờ
